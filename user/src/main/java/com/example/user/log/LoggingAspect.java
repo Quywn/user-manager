@@ -21,11 +21,11 @@ public class LoggingAspect {
 
     @Before("serviceMethods()")
     public void logBefore() {
-        logger.info("Một phương thức trong package service được gọi");
+        logger.info("One method is called");
     }
 
     @AfterReturning("serviceMethods()")
     public void logAfterReturning() {
-        logger.info("Phương thức trong package service đã trả về kết quả");
+        logger.info("One method executed");
     }
 }
